@@ -50,11 +50,11 @@ export default function IdentitySection() {
                   <div className="text-sm text-slate-500">GitHub</div>
                   <a
                     className="mt-1 inline-block font-medium text-slate-900 hover:text-blue-600"
-                    href="https://github.com/Kakeno-k"
+                    href="https://github.com/duree3444-beep"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    github.com/Kakeno-k
+                    github.com/duree3444-beep
                   </a>
                 </div>
               </div>

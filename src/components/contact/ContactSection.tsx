@@ -60,11 +60,11 @@ export default function ContactSection() {
               <div>
                 <div className="font-semibold text-slate-900">GitHub</div>
                 <div className="mt-1 text-sm text-slate-500">
-                  github.com/Kakeno-k
+                  github.com/duree3444-beep
                 </div>
               </div>
               <a
-                href="https://github.com/Kakeno-k"
+                href="https://github.com/duree3444-beep"
                 target="_blank"
                 rel="noreferrer"
               >
