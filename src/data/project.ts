@@ -1,7 +1,7 @@
 import type { ProjectItem } from "@/types/portfolio";
 
 export const project: ProjectItem = {
-  name: "하루 시그날",
+  name: "하루 시그널",
   summary:
     "AI 기반 서비스로 확장 가능한 업로드 및 데이터 처리 구조를 설계하는 프로젝트",
   problem:
