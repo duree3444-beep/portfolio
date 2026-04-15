@@ -22,7 +22,7 @@ export default function IdentitySection() {
     <PageContainer id="identity">
       <SectionHeader
         eyebrow="Identity"
-        title="왜 구조 중심 개발자를 지향하는가"
+        title="왜 아키텍처 지향 개발자를 목표로 하는가"
       />
 
       <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr]">
@@ -31,7 +31,7 @@ export default function IdentitySection() {
             <CardHeader>
               <CardTitle className="text-2xl">이규찬</CardTitle>
               <CardDescription className="text-base leading-7">
-                MSA 기반 아키텍처 지향 개발자를 목표로 하는 대학생입니다.
+                아키텍처 지향 개발자를 목표로 하는 대학생입니다.
               </CardDescription>
             </CardHeader>
 

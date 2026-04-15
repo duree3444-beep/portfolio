@@ -20,7 +20,7 @@ export default function WritingSection() {
       <PageContainer>
         <SectionHeader
           eyebrow="Writing"
-          title="MSA 기반 아키텍처 개발자로서의 고민"
+          title="아키텍처 지향 개발자로서의 고민"
         />
 
         <div className="grid gap-8 xl:grid-cols-[0.42fr_0.58fr]">

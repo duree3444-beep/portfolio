@@ -30,11 +30,22 @@ export interface WritingItem {
   content: string;
 }
 
+export interface ProjectDecisionItem {
+  title: string;
+  before: string;
+  issue: string;
+  after: string;
+  takeaway: string;
+}
+
 export interface ProjectItem {
+  id: string;
   name: string;
   summary: string;
   problem: string;
+  insight: string;
   design: string[];
   services: string[];
   outcomes: string[];
+  decisions: ProjectDecisionItem[];
 }

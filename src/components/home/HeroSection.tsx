@@ -22,7 +22,7 @@ export default function HeroSection() {
             </Badge>
 
             <h1 className="mt-6 text-4xl md:text-6xl font-bold tracking-tight text-slate-950 leading-[1.15]">
-              MSA 기반 아키텍처 지향 개발자를 목표로 하는 <br />
+              아키텍처 지향 개발자를 목표로 하는 <br />
               <span className="text-blue-600">이규찬</span>입니다.
             </h1>
 

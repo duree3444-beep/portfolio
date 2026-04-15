@@ -23,7 +23,7 @@ export default function App() {
         <ContactSection />
       </main>
       <footer className="border-t border-slate-200 py-8 text-center text-sm text-slate-500">
-        © 2026 이규찬 · MSA Architecture Portfolio
+        © 2026 이규찬 · Architecture Portfolio
       </footer>
     </div>
   );
