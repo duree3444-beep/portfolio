@@ -57,6 +57,11 @@ export default function IdentitySection() {
                     github.com/duree3444-beep
                   </a>
                 </div>
+                <div className="rounded-2xl bg-slate-50 p-4 md:col-span-2">
+                  <div className="text-sm text-slate-500">학력</div>
+                  <div className="mt-1 font-medium text-slate-900">경민대학교</div>
+                  <div className="mt-0.5 text-sm text-slate-500">컴퓨터소프트웨어과 · 3학년 재학 중</div>
+                </div>
               </div>
 
               <div>

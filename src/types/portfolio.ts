@@ -48,4 +48,9 @@ export interface ProjectItem {
   services: string[];
   outcomes: string[];
   decisions: ProjectDecisionItem[];
+  role?: string;
+  isTeam?: boolean;
+  techStack?: string[];
+  gitlabUrl?: string;
+  githubUrl?: string;
 }

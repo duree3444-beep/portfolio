@@ -12,6 +12,19 @@ import {
   Sparkles,
   Target,
 } from "lucide-react";
+
+function GitLabIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      className={className}
+      aria-hidden="true"
+    >
+      <path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.49a.42.42 0 0 1 .11-.18.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z" />
+    </svg>
+  );
+}
 import PageContainer from "@/components/ui/PageContainer";
 import SectionHeader from "@/components/layout/SectionHeader";
 import FadeIn from "@/components/motion/FadeIn";
@@ -245,9 +258,42 @@ export default function WorkSection() {
                     <div className="space-y-3">
                       <div className="flex flex-wrap items-center gap-3">
                         <CardTitle className="text-2xl">{project.name}</CardTitle>
+                        {project.role && (
+                          <Badge className="w-fit rounded-full border border-slate-200 bg-slate-100 px-4 py-1 text-slate-600">
+                            {project.role}
+                          </Badge>
+                        )}
+                        {project.isTeam && (
+                          <Badge className="w-fit rounded-full border border-violet-200 bg-violet-50 px-4 py-1 text-violet-700">
+                            팀 프로젝트
+                          </Badge>
+                        )}
                         <Badge className="w-fit rounded-full border border-blue-200 bg-blue-50 px-4 py-1 text-blue-700">
                           Structure First Project
                         </Badge>
+                        {project.gitlabUrl && (
+                          <a
+                            href={project.gitlabUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={(e) => e.stopPropagation()}
+                            className="inline-flex items-center gap-1.5 rounded-full border border-orange-200 bg-orange-50 px-3 py-1 text-xs font-medium text-orange-700 transition-colors hover:bg-orange-100"
+                          >
+                            <GitLabIcon className="h-3.5 w-3.5" />
+                            GitLab
+                          </a>
+                        )}
+                        {project.githubUrl && (
+                          <a
+                            href={project.githubUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={(e) => e.stopPropagation()}
+                            className="inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-medium text-slate-700 transition-colors hover:bg-slate-100"
+                          >
+                            GitHub
+                          </a>
+                        )}
                       </div>
                       <CardDescription className="max-w-3xl text-base leading-7">
                         {project.summary}
@@ -263,6 +309,19 @@ export default function WorkSection() {
                       />
                     </div>
                   </div>
+
+                  {project.techStack && project.techStack.length > 0 && (
+                    <div className="mt-4 flex flex-wrap gap-2">
+                      {project.techStack.map((tech) => (
+                        <span
+                          key={tech}
+                          className="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-600 shadow-sm"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  )}
 
                   <div className="mt-5 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
                     <div className="rounded-2xl bg-slate-50 p-4">
