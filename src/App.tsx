@@ -4,6 +4,7 @@ import IdentitySection from "@/components/identity/IdentitySection";
 import ThinkingSection from "@/components/thinking/ThinkingSection";
 import ArchitectureSection from "@/components/architecture/ArchitectureSection";
 import CapabilitiesSection from "@/components/capabilities/CapabilitiesSection";
+import TechStackSection from "@/components/techstack/TechStackSection";
 import WorkSection from "@/components/work/WorkSection";
 import WritingSection from "@/components/writing/WritingSection";
 import ContactSection from "@/components/contact/ContactSection";
@@ -18,6 +19,7 @@ export default function App() {
         <ThinkingSection />
         <ArchitectureSection />
         <CapabilitiesSection />
+        <TechStackSection />
         <WorkSection />
         <WritingSection />
         <ContactSection />

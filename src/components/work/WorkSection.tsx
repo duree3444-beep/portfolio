@@ -310,19 +310,6 @@ export default function WorkSection() {
                     </div>
                   </div>
 
-                  {project.techStack && project.techStack.length > 0 && (
-                    <div className="mt-4 flex flex-wrap gap-2">
-                      {project.techStack.map((tech) => (
-                        <span
-                          key={tech}
-                          className="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-600 shadow-sm"
-                        >
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
-                  )}
-
                   <div className="mt-5 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
                     <div className="rounded-2xl bg-slate-50 p-4">
                       <div className="text-xs font-semibold text-slate-500">
